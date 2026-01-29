@@ -48,3 +48,11 @@ html {
   opacity: .6;
   transform: translateY(-2px);
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  /* vertical alignment */
+  justify-content: space-between;
+  /* left & right */
+}
