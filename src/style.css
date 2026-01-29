@@ -56,3 +56,224 @@ html {
   justify-content: space-between;
   /* left & right */
 }
+
+#watermark {
+  padding: 30px 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Home Section */
+#Home {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 140px;
+  /* Space below navbar */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.HomeContent {
+  font-family: 'Inter', sans-serif;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 6rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  background: linear-gradient(to right, #ffffff, #888888);
+  background-clip: text;
+  /* standard */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #a0a0a0;
+  letter-spacing: 4px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.hero-bio {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  max-width: 500px;
+  font-weight: 300;
+}
+
+/* Global Section Styles */
+.section {
+  min-height: 100vh;
+  padding: 120px 10% 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+/* Projects */
+.ProjectsContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.ProjectItem {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ProjectItem:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.ProjectItem h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.ProjectItem p {
+  margin: 0;
+  color: #a0a0a0;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Skills */
+.SkillsContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.SkillItem {
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 100px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+  font-family: 'Inter', sans-serif;
+  cursor: default;
+}
+
+.SkillItem:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Experience */
+.ExperienceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.ExperienceItem {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ExperienceItem:last-child {
+  border-bottom: none;
+}
+
+.exp-date {
+  color: #888;
+  font-weight: 500;
+  padding-top: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.exp-details h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.exp-details h4 {
+  margin: 5px 0 15px;
+  color: #aaa;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.exp-details p {
+  margin: 0;
+  color: #ccc;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Contact */
+.ContactContent {
+  max-width: 600px;
+}
+
+.contact-text {
+  font-size: 1.5rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 16px 32px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+}
