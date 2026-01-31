@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <title>roxxyy</title>
+  <title>Sibiarasu D | Portfolio</title>
 </head>
 
 <body>
@@ -20,76 +20,172 @@
       <a class="NavbarItem" href="#Projects">Projects</a>
       <a class="NavbarItem" href="#Skills">Skills</a>
       <a class="NavbarItem" href="#Experience">Experience</a>
+      <a class="NavbarItem" href="#Education">Education</a>
       <a class="NavbarItem" href="#Contact">Contact</a>
     </div>
-    <div id="watermark">ROXXYY!</div>
+    <div id="watermark">
+      <svg width="700" height="260" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="dotnetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#38bdf8" />
+            <stop offset="100%" stop-color="#6366f1" />
+          </linearGradient>
+
+          <filter id="softGlow">
+            <feGaussianBlur stdDeviation="2.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+
+          <clipPath id="clipTop">
+            <polygon points="0,0 700,0 0,260" />
+          </clipPath>
+          <clipPath id="clipBottom">
+            <polygon points="700,0 700,260 0,260" />
+          </clipPath>
+        </defs>
+
+        <!-- Arrow -->
+        <g class="arrow">
+          <line x1="0" y1="0" x2="230" y2="0" stroke="#e5e7eb" stroke-width="5" />
+          <polygon points="230,-10 255,0 230,10" fill="#e5e7eb" />
+        </g>
+
+        <!-- Impact Sparks -->
+        <circle class="spark" cx="350" cy="130" fill="#93c5fd" />
+        <circle class="spark" cx="360" cy="120" fill="#c7d2fe" />
+        <circle class="spark" cx="340" cy="140" fill="#bfdbfe" />
+
+        <!-- Top -->
+        <g class="top" clip-path="url(#clipTop)">
+          <text x="350" y="180" text-anchor="middle">SRX</text>
+        </g>
+
+        <!-- Bottom -->
+        <g class="bottom" clip-path="url(#clipBottom)">
+          <text x="350" y="180" text-anchor="middle">SRX</text>
+        </g>
+      </svg>
+
+    </div>
   </div>
   <section id="Home">
     <div class="HomeContent">
-      <h1 class="hero-title">ROXXYY</h1>
+      <h1 class="hero-title">SIBIARASU D</h1>
       <p class="hero-subtitle">FULL STACK DEVELOPER</p>
+      <div class="hero-contact-info">
+        Chennai, Tamil Nadu, India | +91 96553 78427 | <a href="mailto:sibiarasud@gmail.com">sibiarasud@gmail.com</a>
+        <br>
+        <a href="https://linkedin.com/in/sibiarasu" target="_blank">LinkedIn</a> | <a
+          href="https://github.com/sibi-arasu" target="_blank">Github</a>
+      </div>
       <p class="hero-bio">
-        Crafting cinematic digital experiences with precision and passion.
-        Turning complex problems into elegant, minimalist solutions.
+        Proficient software developer with hands-on experience in building RESTful APIs and single-page applications
+        using .NET Web API and Angular. Skilled in backend automation, system integration, and frontend development with
+        a focus on scalable, efficient solutions.
       </p>
     </div>
   </section>
 
   <section id="Projects" class="section">
-    <h2 class="section-title">Selected Works</h2>
+    <h2 class="section-title">Project Highlights</h2>
     <div class="ProjectsContent">
       <div class="ProjectItem">
         <div class="project-info">
-          <h3>E-Commerce Platform</h3>
-          <p>A high-performance modern shopping experience built with Next.js and Stripe.</p>
+          <h3>Dynamic API Generator</h3>
+          <p>Built a web app to generate RESTful APIs from stored procedures, reducing backend development effort for
+            API creation.</p>
         </div>
       </div>
       <div class="ProjectItem">
         <div class="project-info">
-          <h3>AI Dashboard</h3>
-          <p>Real-time analytics visualization using D3.js and WebSockets.</p>
+          <h3>RecodeX</h3>
+          <p>Automated migration tool that converts ASP.NET applications to Angular and .NET Framework Web API.</p>
         </div>
       </div>
       <div class="ProjectItem">
         <div class="project-info">
-          <h3>Social Network</h3>
-          <p>Decentralized social graph protocol implementation.</p>
+          <h3>XPath Extractor Extension</h3>
+          <p>Browser extension for custom XPath extraction, streamlining Cypress automation testing for QA teams.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section id="Skills" class="section">
-    <h2 class="section-title">Technical Arsenal</h2>
+    <h2 class="section-title">Technical Skills</h2>
+    <div id="skills-3d-container"></div>
     <div class="SkillsContent">
+      <span class="SkillItem">Angular CLI (12+)</span>
       <span class="SkillItem">TypeScript</span>
-      <span class="SkillItem">React / Next.js</span>
-      <span class="SkillItem">Node.js</span>
-      <span class="SkillItem">WebGL / Three.js</span>
-      <span class="SkillItem">TailwindCSS</span>
-      <span class="SkillItem">PostgreSQL</span>
-      <span class="SkillItem">GraphQL</span>
-      <span class="SkillItem">AWS</span>
+      <span class="SkillItem">HTML5</span>
+      <span class="SkillItem">CSS</span>
+      <span class="SkillItem">C#</span>
+      <span class="SkillItem">.NET Framework</span>
+      <span class="SkillItem">Web API</span>
+      <span class="SkillItem">MVC</span>
+      <span class="SkillItem">T-SQL (MSSQL)</span>
+      <span class="SkillItem">SVN</span>
+      <span class="SkillItem">Git</span>
+      <span class="SkillItem">Cypress</span>
+      <span class="SkillItem">IIS</span>
+      <span class="SkillItem">POSTMAN</span>
     </div>
   </section>
 
   <section id="Experience" class="section">
-    <h2 class="section-title">Experience</h2>
+    <h2 class="section-title">Work Experience</h2>
     <div class="ExperienceContent">
       <div class="ExperienceItem">
-        <span class="exp-date">2023 - Present</span>
+        <span class="exp-date">July 2024 – Present</span>
         <div class="exp-details">
-          <h3>Senior Frontend Engineer</h3>
-          <h4>TechCorp Inc.</h4>
-          <p>Leading the core product team, optimizing performance, and establishing design systems.</p>
+          <h3>Dotnet Full-Stack Developer</h3>
+          <h4>Adrenalin eSystems Limited</h4>
+          <p>
+            <strong>Migration:</strong> Migrated legacy ASP.NET Web Forms to Angular & .NET Web API by successfully
+            changing ViewState dependent logic to stateless REST APIs, utilizing RxJS operators to manage client-side
+            state and improve UI responsiveness.
+            <br><br>
+            <strong>Internal Development:</strong> Developed a Javascript and HTML based Browser Extension for custom
+            XPath extraction, streamlining Cypress automation testing for the QA team.
+            <br><br>
+            <strong>Integration & DB Cleanup:</strong> Led AI Agent integration for bill verification in claims and
+            reimbursements. Designed a seamless data flow between Adrenalin HRMS and D365 by defining Post Models using
+            LINQ queries and OAuth authentication to automate payroll process. Performed large-scale database cleanup
+            removing over 200,000 inactive employee records using SQL Jobs and SP.
+          </p>
         </div>
       </div>
       <div class="ExperienceItem">
-        <span class="exp-date">2021 - 2023</span>
+        <span class="exp-date">Feb 2024 – June 2024</span>
         <div class="exp-details">
-          <h3>Full Stack Developer</h3>
-          <h4>StartupX</h4>
-          <p>Built MVP from scratch, handled backend architecture and frontend implementation.</p>
+          <h3>Product Intern</h3>
+          <h4>Adrenalin eSystems Limited</h4>
+          <p>Developed Geo-Location tagging using Google Maps APIs to process and validate attendance records within
+            system reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Education" class="section">
+    <h2 class="section-title">Education & Awards</h2>
+    <div class="ExperienceContent">
+      <div class="ExperienceItem">
+        <span class="exp-date">2020 – 2024</span>
+        <div class="exp-details">
+          <h3>B.E in Computer Science</h3>
+          <h4>Bannari Amman Institute of Technology</h4>
+          <p>CGPA: 8.8 / 10</p>
+        </div>
+      </div>
+      <div class="ExperienceItem">
+        <span class="exp-date">Awards</span>
+        <div class="exp-details">
+          <h3>Fast Starter Award</h3>
+          <p>For exceptional project delivery before the deadline through rapid understanding and execution.</p>
         </div>
       </div>
     </div>
@@ -98,8 +194,11 @@
   <section id="Contact" class="section">
     <h2 class="section-title">Get in Touch</h2>
     <div class="ContactContent">
-      <p class="contact-text">Interested in working together? Let's build something remarkable.</p>
-      <a href="mailto:hello@roxxyy.dev" class="contact-button">Say Hello</a>
+      <p class="contact-text">
+        <!-- <strong>Languages:</strong> Tamil (Native), English (Fluent)<br><br> -->
+        Interested in working together? Let's build something remarkable.
+      </p>
+      <a href="mailto:sibiarasud@gmail.com" class="contact-button">Say Hello</a>
     </div>
   </section>
 
